@@ -10,18 +10,19 @@ import { News } from "./components/news/News";
 import { Music } from "./components/music/Music";
 import { Seting } from "./components/seting/Seting";
 
-function App() {
+function App(props:any) {
   return (
     <BrowserRouter>
       <div className="app-wrapper">
         <Header />
         <Nav />
         <div className="app-wrapper-content">
-          <Route path="/dialogs" component={Dialogs} />
-          <Route path="/profile" component={Profile} />
-          <Route path="/news" component={News}/>
-          <Route path="/music" component={Music}/>
-          <Route path="/seting" component={Seting}/>
+          
+          <Route path="/dialogs" render={()=><Dialogs dialogsData ={props.dialogsData} messages ={props.messages} />} />
+          <Route path="/profile" render={()=><Profile postData = {props.postData}/>} />
+          <Route path="/news" render={()=><News/>}/>
+          <Route path="/music" render={()=><Music/>}/>
+          <Route path="/seting"render={()=><Seting />}/>
         </div>
       </div>
     </BrowserRouter>
