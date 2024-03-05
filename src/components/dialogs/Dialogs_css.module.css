@@ -5,6 +5,10 @@
 
 }
 
+.img {
+    margin-right: 10px;
+}
+
 .dialogs_item{
 padding: 10px;
 }
@@ -13,6 +17,11 @@ padding: 10px;
     color: gold;
 }
 
+.dialogs_item img {
+    width: 20px;
+  height: 20px;
+  border-radius: 10px;
+}
 
 
 .dialog{
@@ -21,7 +30,19 @@ padding:5px;
 
 .messages{
 padding: 10px;
+
 }
 .message{
 padding: 5px;
+display: inline;
 }
+
+.inputMessage{
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: brown;
+}
+

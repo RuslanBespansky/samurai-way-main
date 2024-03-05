@@ -1,0 +1,21 @@
+.circle{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: solid 1px yellow;
+    border-radius: 15px;
+    background-color: yellow;
+    margin-right: 10px;
+}
+
+
+.friends{
+
+    margin-top: 100px ;
+}
+
+
+.friends span {
+    color: aliceblue;
+   font-size: 30px;
+}

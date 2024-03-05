@@ -3,5 +3,9 @@ import React from "react";
 
 
 export const Message = (props: any) => {
-    return <div className={classes.message}>{props.message}</div>;
+    return (<div className= {classes.messageInput}>
+     
+      <div className={classes.message}> <div className= {classes.inputMessage}></div> {props.message}</div>
+      </div>
+    )
   };

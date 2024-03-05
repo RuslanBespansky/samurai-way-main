@@ -10,7 +10,7 @@ export const Profile = (props:any) => {
     <div>
       <ProfileInfo />
 
-      <MyPosts postData ={props.postData} />
+      <MyPosts postData ={props.state.postData} />
     </div>
   );
 };
