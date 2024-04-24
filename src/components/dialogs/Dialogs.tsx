@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./Dialogs_css.module.css";
-import { NavLink } from "react-router-dom";
+
 import { DialogItem } from "./dialogItem/DialogItem";
 import { Message } from "./message/Message";
 
